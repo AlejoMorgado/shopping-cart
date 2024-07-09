@@ -1,0 +1,118 @@
+.cart-card {
+  width: 310px;
+  background-color: #f1f5f9;
+  border-radius: 1rem;
+  margin-top: 40px;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    width: 600px;
+    margin-top: 20px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    color: #1f1b24;
+
+    .dark & {
+      background-color: #1f1b24;
+      &:hover {
+        background-color: #121015;
+      }
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 0.5rem;
+    overflow-y: hidden;
+  }
+
+  &-description {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 0.25rem;
+
+    @media (min-width: 768px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      gap: 0;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-price {
+    margin-top: 0.625rem;
+    font-weight: bold;
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 1.5rem;
+
+    &-quantity {
+      display: flex;
+    }
+  }
+
+  .quantity-button {
+    padding: 0.25rem;
+    background-color: #dadada;
+    border: 1px solid #dadada;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    width: 2rem;
+
+    .dark & {
+      background-color: #2a2a2a;
+      border: none;
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+  .remove-button {
+    border-style: none;
+  }
+  .remove-button-container,
+  .material-symbols-outlined,
+  .remove-button {
+    background-color: #fed7d7;
+    color: #c53030;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.5rem;
+    &:hover {
+      background-color: #fc8181;
+    }
+  }
+}
+
+.title {
+  padding: 2em;
+  font-size: 1rem;
+  max-height: 6rem;
+  overflow-y: hidden;
+  font-weight: bold;
+  color: #64748b;
+}

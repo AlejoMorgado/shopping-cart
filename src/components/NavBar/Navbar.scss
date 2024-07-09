@@ -1,0 +1,52 @@
+a {
+  color: orange;
+}
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+
+  .navbar-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+    font-weight: 1000;
+    text-align: center;
+    color: black;
+
+    .navbar-subtitle {
+      font-weight: bold;
+      font-size: 0.75rem;
+    }
+  }
+
+  .navbar-links {
+    color: black;
+    display: flex;
+
+    display: flex;
+    font-size: 0.875rem;
+    color: black;
+    font-weight: bold;
+    letter-spacing: wide;
+
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      display: flex;
+    }
+  }
+  .navbar-links a {
+    color: black;
+  }
+}
